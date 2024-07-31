@@ -16,3 +16,31 @@ The `sfdx-project.json` file contains useful configuration information for your 
 - [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
 - [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+
+---
+
+# Salesforce Project
+
+This repository contains a Salesforce project with Apex Triggers, Classes, and Lightning Web Components (LWC).
+
+## Project Structure
+
+- **Apex Classes**: Located in the `classes` directory.
+  - `OrderController.cls`
+  - `InventoryManagement.cls`
+  - `OrderItemTriggerHandler.cls`
+  - `ProductionCapacityService.cls`
+- **Apex Triggers**: Located in the `triggers` directory.
+  - `OrderCapacityCheck.trigger`
+  - `OrderItemTrigger.trigger`
+- **LWC Components**: Located in the `lwc` directory.
+  - `orderSummary`
+
+## Setup
+
+To set up the project in your Salesforce org, follow these steps:
+
+1. Clone the repository to your local machine:
+   ```sh
+   git clone https://github.com/yourusername/salesforce-project.git
+   cd salesforce-project
