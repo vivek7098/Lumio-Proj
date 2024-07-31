@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Order Summary" icon-name="standard:orders">
+        <div if:true={orderSummary}>
+            <p><b>Order Number:</b> {orderSummary.orderNumber}</p>
+            <p><b>Customer Name:</b> {orderSummary.customerName}</p>
+            <p><b>Total Quantity:</b> {orderSummary.totalQuantity}</p>
+            <lightning-datatable
+                key-field="Id"
+                data={orderSummary.orderItems}
+                columns={columns}
+            ></lightning-datatable>
+        </div>
+        <div if:true={error}>
+            <p class="slds-text-color_error">{error}</p>
+        </div>
+    </lightning-card>
+</template>
